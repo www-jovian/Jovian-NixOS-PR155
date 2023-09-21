@@ -48,6 +48,156 @@
 <p>The options listing is available on the website.</p>
 </blockquote>
 </div>
+<section class="option-details" id="jovian.decky-loader.enable">
+<h2><a href="options.html#jovian.decky-loader.enable">jovian.decky-loader.enable</a></h2>
+<div class="data">
+<div class="option-data -default">
+<h3>Default:</h3>
+<code>false</code>
+</div>
+<div class="option-data -type">
+<h3>Type:</h3>
+<div>
+boolean
+</div>
+</div>
+<div class="option-data -description">
+<h3>Description:</h3>
+<div>
+<p>Whether to enable the Steam Deck Plugin Loader.</p>
+</div>
+</div>
+<div class="option-data -declaration">
+<h3>Declared by:</h3>
+<div><a href="https://github.com/Jovian-Experiments/Jovian-NixOS/blob/development/modules/decky-loader.nix">modules/decky-loader.nix</a></div>
+</div>
+</div>
+</section>
+<section class="option-details" id="jovian.decky-loader.extraPackages">
+<h2><a href="options.html#jovian.decky-loader.extraPackages">jovian.decky-loader.extraPackages</a></h2>
+<div class="data">
+<div class="option-data -default">
+<h3>Default:</h3>
+<code>[ ]</code>
+</div>
+<div class="option-data -type">
+<h3>Type:</h3>
+<div>
+list of package
+</div>
+</div>
+<div class="option-data -description">
+<h3>Description:</h3>
+<div>
+<p>Extra packages to add to the service PATH.</p>
+</div>
+</div>
+<div class="option-data -declaration">
+<h3>Declared by:</h3>
+<div><a href="https://github.com/Jovian-Experiments/Jovian-NixOS/blob/development/modules/decky-loader.nix">modules/decky-loader.nix</a></div>
+</div>
+</div>
+</section>
+<section class="option-details" id="jovian.decky-loader.extraPythonPackages">
+<h2><a href="options.html#jovian.decky-loader.extraPythonPackages">jovian.decky-loader.extraPythonPackages</a></h2>
+<div class="data">
+<div class="option-data -default">
+<h3>Default:</h3>
+<code>pythonPackages: with pythonPackages; []</code>
+</div>
+<div class="option-data -type">
+<h3>Type:</h3>
+<div>
+function that evaluates to a(n) list of package
+</div>
+</div>
+<div class="option-data -description">
+<h3>Description:</h3>
+<div>
+<p>Extra Python packages to add to the PYTHONPATH of the loader.</p>
+</div>
+</div>
+<div class="option-data -declaration">
+<h3>Declared by:</h3>
+<div><a href="https://github.com/Jovian-Experiments/Jovian-NixOS/blob/development/modules/decky-loader.nix">modules/decky-loader.nix</a></div>
+</div>
+</div>
+</section>
+<section class="option-details" id="jovian.decky-loader.package">
+<h2><a href="options.html#jovian.decky-loader.package">jovian.decky-loader.package</a></h2>
+<div class="data">
+<div class="option-data -default">
+<h3>Default:</h3>
+<code>pkgs.decky-loader</code>
+</div>
+<div class="option-data -type">
+<h3>Type:</h3>
+<div>
+package
+</div>
+</div>
+<div class="option-data -description">
+<h3>Description:</h3>
+<div>
+<p>The loader package to use.</p>
+</div>
+</div>
+<div class="option-data -declaration">
+<h3>Declared by:</h3>
+<div><a href="https://github.com/Jovian-Experiments/Jovian-NixOS/blob/development/modules/decky-loader.nix">modules/decky-loader.nix</a></div>
+</div>
+</div>
+</section>
+<section class="option-details" id="jovian.decky-loader.stateDir">
+<h2><a href="options.html#jovian.decky-loader.stateDir">jovian.decky-loader.stateDir</a></h2>
+<div class="data">
+<div class="option-data -default">
+<h3>Default:</h3>
+<code>"/var/lib/decky-loader"</code>
+</div>
+<div class="option-data -type">
+<h3>Type:</h3>
+<div>
+path
+</div>
+</div>
+<div class="option-data -description">
+<h3>Description:</h3>
+<div>
+<p>Directory to store plugins and data.</p>
+</div>
+</div>
+<div class="option-data -declaration">
+<h3>Declared by:</h3>
+<div><a href="https://github.com/Jovian-Experiments/Jovian-NixOS/blob/development/modules/decky-loader.nix">modules/decky-loader.nix</a></div>
+</div>
+</div>
+</section>
+<section class="option-details" id="jovian.decky-loader.user">
+<h2><a href="options.html#jovian.decky-loader.user">jovian.decky-loader.user</a></h2>
+<div class="data">
+<div class="option-data -default">
+<h3>Default:</h3>
+<code>"decky"</code>
+</div>
+<div class="option-data -type">
+<h3>Type:</h3>
+<div>
+string
+</div>
+</div>
+<div class="option-data -description">
+<h3>Description:</h3>
+<div>
+<p>The user Decky Loader should run plugins as.</p>
+</div>
+</div>
+<div class="option-data -declaration">
+<h3>Declared by:</h3>
+<div><a href="https://github.com/Jovian-Experiments/Jovian-NixOS/blob/development/modules/decky-loader.nix">modules/decky-loader.nix</a></div>
+</div>
+</div>
+</section>
 <section class="option-details" id="jovian.devices.steamdeck.enable">
 <h2><a href="options.html#jovian.devices.steamdeck.enable">jovian.devices.steamdeck.enable</a></h2>
 <div class="data">
